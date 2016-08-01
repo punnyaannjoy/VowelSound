@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/selection_table"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+            <TextView
+                android:id="@+id/english_learning"
+                android:text=" English learning"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick=""
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/malayalam_learning"
+                android:text="Malayalam learning"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/math_learning"
+            android:text=" Math learning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/exit_app"
+            android:text="Close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+</TableLayout>

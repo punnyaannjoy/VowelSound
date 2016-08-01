@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="@dimen/size_4_X">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_2_X"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/size_10_X"
+        android:layout_weight="2"
+        style="@style/TextTheme"
+
+        android:text="@string/profile_name"/>
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/size_4_X"
+            android:layout_weight="1"
+            android:hint="@string/profile_name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_2_X"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            style="@style/TextTheme"
+
+            android:text="@string/profile_age"/>
+        <EditText
+            android:id="@+id/profile_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/size_4_X"
+            android:hint="@string/profile_age"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_2_X"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/size_10_X"
+            android:layout_weight="2"
+            style="@style/TextTheme"
+
+            android:text="@string/profile_gender"
+        />
+        <RadioGroup
+            android:id="@+id/profile_radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/size_4_X">
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_female_radio_button"/>
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_male_radio_button"/>
+            </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_2_X"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            style="@style/TextTheme"
+
+            android:text="@string/profile_top_score"/>
+        <TextView
+            android:id="@+id/profile_top_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextTheme"
+
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/size_4_X"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_save_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/size_10_X"
+        style="@style/ButtonTheme"
+
+        android:text="@string/profile_save_button"/>
+
+</LinearLayout>

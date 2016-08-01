@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".view.VowelQuestionActivityFragment">
+
+    <TextView
+        android:text="@string/close"
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_6_X"
+        android:layout_marginBottom="@dimen/option_padding"
+        android:padding="@dimen/size_3_X"
+        android:layout_centerInParent="true">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continueQuestion"
+        android:textSize="@dimen/size_3_X"
+        android:layout_marginBottom="@dimen/option_padding"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/button_padding"
+        android:textColor="@color/black"
+        android:background="@color/buttoncolor"
+        />
+
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_6_X"
+        android:text="bake"
+        android:visibility="gone"/>-->
+
+
+</RelativeLayout>

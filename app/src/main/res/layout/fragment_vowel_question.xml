@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:style="http://schemas.android.com/apk/res-auto"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".view.VowelQuestionActivityFragment">
+
+    <TextView
+        android:text="@string/skip"
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextTheme"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextSwitcher
+        android:id="@+id/questions_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_6_X"
+        android:layout_marginBottom="@dimen/option_padding"
+        android:padding="@dimen/size_3_X"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/options">
+
+    </TextSwitcher>
+
+    <!--<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_6_X"
+        android:text="bake"
+        android:visibility="gone"/>-->
+
+    <include layout="@layout/answer_options_layout" />
+
+</RelativeLayout>

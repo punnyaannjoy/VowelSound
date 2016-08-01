@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/options"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_centerHorizontal="true"
+              android:paddingBottom="@dimen/option_padding"
+              android:layout_alignParentBottom="true"
+    >
+    <Button
+        android:id="@+id/answer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_3_X"
+        android:layout_marginRight="@dimen/size_1_X"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:text="i"
+        style="@style/ButtonTheme"
+
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/answer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_3_X"
+        android:layout_marginRight="@dimen/size_1_X"
+        android:layout_marginLeft="@dimen/size_1_X"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:singleLine="true"
+        android:text="l.u"
+        style="@style/ButtonTheme"
+
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/answer3"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_3_X"
+        android:layout_marginRight="@dimen/size_1_X"
+        android:layout_marginLeft="@dimen/size_1_X"
+        android:gravity="center"
+        android:textAllCaps="false"
+        style="@style/ButtonTheme"
+
+        android:layout_weight="1"
+        android:text="a"/>
+    <Button
+        android:id="@+id/answer4"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_3_X"
+        android:layout_marginLeft="@dimen/size_1_X"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        style="@style/ButtonTheme"
+
+        android:text="o"/>
+
+</LinearLayout>
